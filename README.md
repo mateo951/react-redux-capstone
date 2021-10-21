@@ -45,12 +45,7 @@ Built With
 - To Deploy to GH-Pages:
   - Run `npm run deploy`
 
-### Authors ###
-👤 Juan Gonzalez<br>
-GitHub: [@JbirdL86](https://github.com/JbirdL86)<br>
-Twitter: [@JuanLui06498455](https://twitter.com/JuanLui06498455)<br>
-LinkedIn: [@Juan Gonzalez](https://www.linkedin.com/in/juan-luis-0551921aa/)<br>
-
+### Author ###
 👤 Mateo Villagómez<br>
 GitHub: [@mateo951](https://github.com/mateo951)<br>
 Twitter: [@MVGameDev](https://twitter.com/MVGameDev)<br>
