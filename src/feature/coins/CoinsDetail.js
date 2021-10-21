@@ -5,7 +5,6 @@ import style from './coins.module.css';
 const CoinsDetail = () => {
   const { coins } = useSelector((state) => state.coins);
   const { active } = useSelector((state) => state.coins);
-  console.log(active);
   return (
     <div className={style.detailContainer}>
       <p>Cryptocurrency</p>

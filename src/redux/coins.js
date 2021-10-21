@@ -48,7 +48,6 @@ const updateFilter = (coins) => ({
 });
 
 export const filterCoins = (filter, coins) => {
-  console.log(filter);
   if (filter !== 'value') {
     coins.sort((a, b) => b.coin_change - a.coin_change);
   } else {
