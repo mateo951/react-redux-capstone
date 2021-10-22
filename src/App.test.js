@@ -35,11 +35,11 @@ describe('pages test snapshots', () => {
   it('testing detail interaction', async () => {
     await store.dispatch(fetchGetCoins());
     render(
-        <Provider store={store}>
-          <App>
-            <Coins />
-          </App>
-        </Provider>
+      <Provider store={store}>
+        <App>
+          <Coins />
+        </App>
+      </Provider>,
     );
     const TetherDetail = screen.getByText('Tether - USDT');
     fireEvent.click(TetherDetail);
