@@ -60,7 +60,7 @@ ul {
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
 .infoContainer {
@@ -74,4 +74,11 @@ ul {
 
 .detailInfo {
   font-size: 17px;
+}
+
+.backBttn {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding-left: 10%;
 }

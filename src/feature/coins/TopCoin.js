@@ -1,21 +1,24 @@
-import React from 'react';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import style from './topCoin.module.css';
 
-// const { coins } = useSelector((state) => state.coins);
-const TopCoin = () => (
-  <>
-    <div className={style.container}>
-      <h3>Most Valuable - Bitcoin</h3>
-      <div className={style.content}>
-        <img alt="BTC" src="https://img.icons8.com/color/70/000000/bitcoin--v3.png" />
-        <p>Coins Value</p>
-        {/* { coins !== undefined ? <p>Math.max(...coins.coin_id)</p> : <p>test</p>} */}
-        {/* // coins !== undefined ? coins.length > 0 ? coins.map((coin) => (
-          //   <CoinItem key={coin.coin_id} />
-          // )) : <p>Loading Data</p> : <p>Loading Data</p> */}
+const TopCoin = () => {
+  const { coins } = useSelector((state) => state.coins);
+
+  return (
+    <>
+      <div className={style.container}>
+        <h3>
+          Most Valuable -
+          {' '}
+          { coins !== undefined ? coins[0].coin_name : <p>Loading Crypto</p> }
+        </h3>
+        <div className={style.content}>
+          <img alt="BTC" src="https://img.icons8.com/color/70/000000/bitcoin--v3.png" />
+          { coins !== undefined ? `$${coins[0].coin_value}` : <p>Loading Value</p> }
+        </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
+
 export default TopCoin;
