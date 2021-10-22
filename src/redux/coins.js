@@ -32,7 +32,7 @@ export const fetchGetCoins = () => async (dispatch) => {
         coin_id: value.name,
         coin_name: value.symbol,
         coin_value: value.priceUsd.substring(0, 8),
-        coin_change: value.changePercent24Hr,
+        coin_change: value.changePercent24Hr.substring(0, 8),
       };
       coins.push(coin);
     });
@@ -42,9 +42,9 @@ export const fetchGetCoins = () => async (dispatch) => {
   }
 };
 
-const updateFilter = (coins) => ({
+const updateFilter = (activeFilter, coins) => ({
   type: UPDATE_FILTER,
-  payload: coins,
+  payload: { activeFilter, coins },
 });
 
 export const filterCoins = (filter, coins) => {
@@ -53,15 +53,21 @@ export const filterCoins = (filter, coins) => {
   } else {
     coins.sort((a, b) => b.coin_value - a.coin_value);
   }
-  return updateFilter(coins);
+  return updateFilter(filter, coins);
 };
 
 const reducer = (state = [], { type, payload }) => {
   switch (type) {
-    case GET_COINS:
-      return { ...state, coins: payload.slice() };
-    case UPDATE_FILTER:
-      return { ...state, coins: payload.slice() };
+    case GET_COINS: {
+      const activeFilter = 'value';
+      return { ...state, coins: payload.slice(), activeFilter };
+    }
+    case UPDATE_FILTER: {
+      const { coins } = payload;
+      const { activeFilter } = payload;
+      console.log(activeFilter);
+      return { ...state, coins: coins.slice(), activeFilter };
+    }
     case SET_DETAIL:
       return { ...state, active: payload };
     case HANDLE_FETCH_ERROR:

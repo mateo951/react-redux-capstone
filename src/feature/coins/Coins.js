@@ -10,10 +10,11 @@ import style from './coins.module.css';
 
 const Coins = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchGetCoins());
-  }, []);
   const { coins } = useSelector((state) => state.coins);
+  useEffect(() => {
+    if (coins === undefined || coins.length === 0) dispatch(fetchGetCoins());
+  }, []);
+  const { activeFilter } = useSelector((state) => state.coins);
   const handleChange = (event) => {
     dispatch(filterCoins(event.target.value, coins));
   };
@@ -26,9 +27,9 @@ const Coins = () => {
     <div className={style.coinsContainer}>
       <div className={style.filtersContainer}>
         <p>Top 10 Most Valuable Crypto</p>
-        <select onChange={handleChange}>
-          <option defaultValue value="value">Value</option>
-          <option value="fluctuation">Fluctuation</option>
+        <select value={activeFilter} onChange={handleChange}>
+          <option value="value">value</option>
+          <option value="fluctuation">fluctuation</option>
         </select>
       </div>
       <ul className={style.coinBox}>
@@ -39,7 +40,8 @@ const Coins = () => {
                 key={coin.coin_id}
                 coin_id={coin.coin_id}
                 coin_name={coin.coin_name}
-                coin_value={coin.coin_value}
+                coin_value={activeFilter === 'value' ? coin.coin_value : coin.coin_change}
+                filter={activeFilter}
               />
             </NavLink>
           )) : <p>Loading Data</p> : <p>Loading Data</p>

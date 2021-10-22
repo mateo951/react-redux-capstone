@@ -21,10 +21,9 @@ const CoinsDetail = () => {
       </div>
       <p>Daily Fluctuation</p>
       <div className={style.infoContainer}>
-        <p className={style.detailInfo}>{coins[active].coin_change}</p>
+        <p className={style.detailInfo}>{`${coins[active].coin_change}%`}</p>
       </div>
     </div>
   );
 };
-
 export default CoinsDetail;
