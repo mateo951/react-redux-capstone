@@ -9,7 +9,7 @@
   align-items: center;
   font-size: 15px;
   color: white;
-  background-color: #35548B;
+  background-color: #35548b;
   padding: 5px 10px;
 }
 
@@ -31,27 +31,27 @@ ul {
 }
 
 .coinsContainer ul a:nth-child(4n+1) {
-  background-color: #4066AD;
+  background-color: #4066ad;
   color: white;
 }
 
 .coinsContainer ul a:nth-child(4n) {
-  background-color: #4066AD;
+  background-color: #4066ad;
   color: white;
 }
 
 .coinsContainer ul a:nth-child(4n-1) {
-  background-color: #4872C2;
+  background-color: #4872c2;
   color: white;
 }
 
 .coinsContainer ul a:nth-child(4n-2) {
-  background-color: #4872C2;
+  background-color: #4872c2;
   color: white;
 }
 
 .detailContainer {
-  background-color: #5689E5;
+  background-color: #5689e5;
   height: 85vh;
   color: white;
   text-align: center;
@@ -66,7 +66,7 @@ ul {
 .infoContainer {
   width: 70%;
   height: 50px;
-  background-color: #3E64AB;
+  background-color: #3e64ab;
   display: flex;
   justify-content: center;
   align-items: center;
