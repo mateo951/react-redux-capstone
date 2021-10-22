@@ -65,7 +65,6 @@ const reducer = (state = [], { type, payload }) => {
     case UPDATE_FILTER: {
       const { coins } = payload;
       const { activeFilter } = payload;
-      console.log(activeFilter);
       return { ...state, coins: coins.slice(), activeFilter };
     }
     case SET_DETAIL:

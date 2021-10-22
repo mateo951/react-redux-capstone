@@ -4,7 +4,6 @@ import Navigation from './feature/navigation/Navigation';
 import Coins from './feature/coins/Coins';
 import TopCoin from './feature/coins/TopCoin';
 import CoinsDetail from './feature/coins/CoinsDetail';
-import './App.css';
 
 function App() {
   return (
