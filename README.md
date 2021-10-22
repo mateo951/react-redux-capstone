@@ -1,16 +1,17 @@
 ## React-Redux Capstone  ##
 
-The objective is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux.
 
 Built With
 
 - REACT, REDUX
-- Node.js, Git, Bootstrap,
+- Node.js, Git, 
 
-[Live Demo: Netlify](https://space-travelers-jg-mv.netlify.app)
+[Live Demo: Netlify](https://react-castpone-mv.netlify.app)
 
 
 ![Alt text](./src/media/demo.png?raw=true)
+![Alt text](./src/media/details.png?raw=true)
 
 ### Prerequisites
 
@@ -23,7 +24,7 @@ Built With
 - To clone this repo:
   - Open the Terminal(Mac/Linux) or the Cmd (Windows);
   - Navigate to where you want to paste the Repo folder;
-  - Type `git clone git@github.com:mateo951/space-travelers.git`;
+  - Type `git clone git@github.com:mateo951/react-redux-capstone.git`;
   - Open the folder todo-list that was created on your IDE;
 
 ### Install
