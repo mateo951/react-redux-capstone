@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import axios from 'axios';
 
 const apiURL = 'https://api.coincap.io/v2/assets?limit=10';
@@ -28,6 +27,7 @@ export const fetchGetCoins = () => async (dispatch) => {
     const coins = [];
     Object.entries(data).forEach(([key, value]) => {
       const coin = {
+        coin_index: key,
         coin_rank: value.rank,
         coin_id: value.name,
         coin_name: value.symbol,

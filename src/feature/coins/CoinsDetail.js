@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import style from './coins.module.css';
