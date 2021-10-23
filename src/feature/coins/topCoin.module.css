@@ -1,0 +1,25 @@
+h3 {
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  font-weight: 200;
+}
+
+.container {
+  height: 135px;
+  background-color: #558ed9;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  column-gap: 20px;
+}
+
+p {
+  margin: 0;
+}

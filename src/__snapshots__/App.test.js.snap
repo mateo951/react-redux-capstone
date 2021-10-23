@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test app snapshots testing rendering of page 1`] = `
+<h3>
+  Most Valuable -
+   
+  <p>
+    Loading Crypto
+  </p>
+</h3>
+`;
