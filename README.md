@@ -9,6 +9,10 @@ Built With
 
 [Live Demo: Netlify](https://react-castpone-mv.netlify.app)
 
+![Alt text](./src/media/demo.png?raw=true)
+![Alt text](./src/media/details.png?raw=true)
+
+
 ### Prerequisites
 
 - Git/GitHub;
@@ -48,10 +52,13 @@ GitHub: [@mateo951](https://github.com/mateo951)<br>
 Twitter: [@MVGameDev](https://twitter.com/MVGameDev)<br>
 LinkedIn: [@Mateo Villagómez](https://www.linkedin.com/in/mateo-villagómez/)<br>
 
+## Design 
+- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance. 
+
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues](https://github.com/mateo951/space-travelers/issues) page.
+Feel free to check the [issues](https://github.com/mateo951/react-redux-capstone/issues) page.
 
 Show your support
 Give a ⭐️ if you like this project!
