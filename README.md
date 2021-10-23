@@ -9,9 +9,8 @@ Built With
 
 [Live Demo: Netlify](https://react-castpone-mv.netlify.app)
 
-![Alt text](./src/media/demo.png?raw=true)
-![Alt text](./src/media/details.png?raw=true)
-
+![ScreenShot](./src/demo.png?raw=true)
+![ScreenShot](./src/details.png?raw=true)
 
 ### Prerequisites
 
